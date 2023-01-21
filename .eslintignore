@@ -3,3 +3,5 @@
 /node_modules
 /build
 vite.config.ts
+commitlint.config.cjs
+lint-staged.config.cjs
