@@ -10,6 +10,8 @@
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
     "plugin:tailwindcss/recommended",
     "plugin:prettier/recommended" // Very important to put this last
   ],
@@ -24,13 +26,23 @@
     "@typescript-eslint",
     "prettier",
     "simple-import-sort",
+    "testing-library",
+    "jest-dom",
     "tailwindcss"
   ],
   "rules": {
     "react/jsx-props-no-spreading": "off",
     "import/prefer-default-export": "off", // Named export is easier to refactor automatically
     "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/exports": "error",
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-debugging-utils": "warn",
+    "testing-library/no-dom-import": "off",
+    "jest-dom/prefer-checked": "error",
+    "jest-dom/prefer-enabled-disabled": "error",
+    "jest-dom/prefer-required": "error",
+    "jest-dom/prefer-to-have-attribute": "error"
   },
   "settings": {
     "import/resolver": {

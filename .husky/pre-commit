@@ -5,6 +5,6 @@ if [ -t 2 ]; then
   exec >/dev/tty 2>&1
 fi
 
-pnpm run test --run
+pnpm test
 # Disable concurent to run `check-types` after ESLint in lint-staged
 pnpm lint-staged --concurrent false

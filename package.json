@@ -15,7 +15,9 @@
     "check-types": "tsc --noEmit --pretty",
     "commit": "cz",
     "cm": "pnpm commit",
-    "test": "vitest"
+    "test": "vitest --run --reporter verbose",
+    "test:w": "vitest",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -32,6 +34,7 @@
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
     "@vitejs/plugin-react": "^3.0.0",
+    "@vitest/ui": "^0.27.3",
     "autoprefixer": "^10.4.13",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
@@ -41,10 +44,12 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest-dom": "^4.0.3",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.1",
     "eslint-plugin-simple-import-sort": "^9.0.0",
     "eslint-plugin-tailwindcss": "^3.8.0",
+    "eslint-plugin-testing-library": "^5.9.1",
     "husky": "^8.0.3",
     "jsdom": "^21.0.0",
     "lint-staged": "^13.1.0",
