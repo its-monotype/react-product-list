@@ -8,6 +8,7 @@
     "airbnb-typescript",
     "airbnb/hooks",
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended",
     "plugin:tailwindcss/recommended",
     "plugin:prettier/recommended" // Very important to put this last
@@ -26,7 +27,6 @@
     "tailwindcss"
   ],
   "rules": {
-    "react/react-in-jsx-scope": 0, // Since React 17, import React is no longer needed,
     "react/jsx-props-no-spreading": "off",
     "import/prefer-default-export": "off", // Named export is easier to refactor automatically
     "simple-import-sort/imports": "error",
