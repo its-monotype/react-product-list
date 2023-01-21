@@ -11,16 +11,23 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended" // Very important to put this last
   ],
-  "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "prettier", "simple-import-sort"],
   "rules": {
-    // Since React 17, import React is no longer needed
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0, // Since React 17, import React is no longer needed,
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off", // Named export is easier to refactor automatically
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
+    }
   }
 }
