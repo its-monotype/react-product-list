@@ -5,3 +5,5 @@
 vite.config.ts
 commitlint.config.cjs
 lint-staged.config.cjs
+tailwind.config.cjs
+postcss.config.cjs

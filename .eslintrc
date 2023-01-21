@@ -9,6 +9,7 @@
     "airbnb/hooks",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended",
     "plugin:prettier/recommended" // Very important to put this last
   ],
   "parser": "@typescript-eslint/parser",
@@ -17,7 +18,13 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier", "simple-import-sort"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier",
+    "simple-import-sort",
+    "tailwindcss"
+  ],
   "rules": {
     "react/react-in-jsx-scope": 0, // Since React 17, import React is no longer needed,
     "react/jsx-props-no-spreading": "off",
