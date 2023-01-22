@@ -28,6 +28,7 @@ specifiers:
   eslint-plugin-simple-import-sort: ^9.0.0
   eslint-plugin-tailwindcss: ^3.8.0
   eslint-plugin-testing-library: ^5.9.1
+  eslint-plugin-unused-imports: ^2.0.0
   husky: ^8.0.3
   jsdom: ^21.0.0
   lint-staged: ^13.1.0
@@ -43,6 +44,7 @@ specifiers:
   vitest: ^0.27.3
 
 dependencies:
+  eslint-plugin-unused-imports: 2.0.0_virssgr5omih4ylyae2gddvmxu
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.7.0_biqbaboplfbrettd7655fr4n2y
@@ -2513,6 +2515,26 @@ packages:
       - supports-color
       - typescript
     dev: true
+
+  /eslint-plugin-unused-imports/2.0.0_virssgr5omih4ylyae2gddvmxu:
+    resolution: {integrity: sha512-3APeS/tQlTrFa167ThtP0Zm0vctjr4M44HMpeg1P4bK6wItarumq0Ma82xorMKdFsWpphQBlRPzw/pxiVELX1A==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': ^5.0.0
+      eslint: ^8.0.0
+    peerDependenciesMeta:
+      '@typescript-eslint/eslint-plugin':
+        optional: true
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 5.48.2_caon6io6stgpr7lz2rtbhekxqy
+      eslint: 8.32.0
+      eslint-rule-composer: 0.3.0
+    dev: false
+
+  /eslint-rule-composer/0.3.0:
+    resolution: {integrity: sha512-bt+Sh8CtDmn2OajxvNO+BX7Wn4CIWMpTRm3MaiKPCQcnnlm0CS2mhui6QaoeQugs+3Kj2ESKEEGJUdVafwhiCg==}
+    engines: {node: '>=4.0.0'}
+    dev: false
 
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
