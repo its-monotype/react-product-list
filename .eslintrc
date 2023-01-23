@@ -32,6 +32,7 @@
     "tailwindcss"
   ],
   "rules": {
+    "react/require-default-props": "off", // Allow non-defined react props as undefined
     "react/jsx-props-no-spreading": "off",
     "import/prefer-default-export": "off", // Named export is easier to refactor automatically
     // Remove unused imports

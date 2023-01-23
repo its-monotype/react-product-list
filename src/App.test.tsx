@@ -7,7 +7,7 @@ import { renderWithRouter } from './test/utils';
 describe('App', () => {
   it('renders', async () => {
     renderWithRouter(<App />);
-    expect(screen.getByText(/Home/i)).toBeInTheDocument();
+    expect(screen.getByText(/React Product List/i)).toBeInTheDocument();
   });
   it('handles no match', async () => {
     renderWithRouter(<App />, { route: '/no-match' });
